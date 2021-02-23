@@ -3,10 +3,12 @@ import random
 from lib.pool_functions import random_elements
 
 
+# Generates input data
+
 def data_generator_courses():
-    names = ["Math Analyisis", "Programming", "Data Base", "Math Logic", "Algorythyms", "Crypto", "Lingusitcs",
+    names = ["Math Analysis", "Programming", "Data Base", "Math Logic", "Algorithms", "Crypto", "Linguistics",
              "Cloud systems"]
-    types = ["lecture", "practic"]
+    types = ["lecture", "practice"]
     hours_range = [10, 20]
 
     courses = []

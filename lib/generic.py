@@ -58,10 +58,10 @@ def next_gen(prev_gen, reproduction_number=10, surviving_number=1, crossover_poi
 def generic_finder(time_slots, rooms, courses, groups, teachers):
     pool = generate_pool(20, time_slots, rooms, courses, groups, teachers)
     print("Start pool was created")
-    i=0
+    i = 0
     while penalty(pool[0]) != 0:
-        i+=1
-        print("Generation ",i)
+        i += 1
+        print("Generation ", i)
         pool = next_gen(pool)
 
     return pool[0]
